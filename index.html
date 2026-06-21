@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Henrique · Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAV (Bootstrap) -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background:rgba(13,13,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.07);">
+  <div class="container-fluid px-4 px-lg-5">
+    <a class="navbar-brand fw-bold font-monospace" href="#hero"
+       style="background:linear-gradient(135deg,#3B82F6,#8B5CF6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+      ⌨ dropeesz
+    </a>
+    <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMain"
+            aria-controls="navMain" aria-expanded="false" aria-label="Abrir menu"
+            style="filter:invert(1);opacity:.7;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#sobre"    style="color:#94A3B8;font-size:.875rem;font-weight:500;">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tech"     style="color:#94A3B8;font-size:.875rem;font-weight:500;">Tech</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projetos" style="color:#94A3B8;font-size:.875rem;font-weight:500;">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicos" style="color:#94A3B8;font-size:.875rem;font-weight:500;">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certs"    style="color:#94A3B8;font-size:.875rem;font-weight:500;">Certs</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="nav-link px-3 py-1 rounded-pill" href="#contato"
+             style="background:linear-gradient(135deg,#3B82F6,#8B5CF6);color:#fff !important;font-size:.875rem;font-weight:600;">
+            Contato
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-tag">🇧🇷 Rio de Janeiro, Brasil</div>
+
+  <h1 class="hero-name">
+    Pedro<br><span>Henrique.</span>
+  </h1>
+  <p class="hero-role">Software Developer · Full Stack em formação</p>
+
+  <div class="terminal">
+    <div class="terminal-bar">
+      <div class="dot dot-r"></div>
+      <div class="dot dot-y"></div>
+      <div class="dot dot-g"></div>
+    </div>
+    <div class="terminal-line"><span class="prompt">→</span> <span class="cmd">whoami</span></div>
+    <div class="terminal-line">&nbsp;&nbsp;<span class="val">Pedro Henrique</span> <span style="color:var(--muted)">// dev junior</span></div>
+    <div class="terminal-line" style="margin-top:.5rem"><span class="prompt">→</span> <span class="cmd">skills</span></div>
+    <div class="terminal-line">&nbsp;&nbsp;[ <span class="str">"Java"</span>, <span class="str">"Spring Boot"</span>, <span class="str">"JavaScript"</span>,</div>
+    <div class="terminal-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"PHP"</span>, <span class="str">"MySQL"</span>, <span class="str">"HTML/CSS"</span> ]</div>
+    <div class="terminal-line" style="margin-top:.5rem"><span class="prompt">→</span> <span class="cmd">focus</span></div>
+    <div class="terminal-line">&nbsp;&nbsp;<span class="val">Full Stack</span> + <span class="val">Banco de Dados</span> <span class="cursor"></span></div>
+  </div>
+
+  <div class="hero-btns">
+    <a href="#projetos" class="btn btn-primary">Ver projetos ↓</a>
+    <a href="https://github.com/dropeesz" target="_blank" class="btn btn-ghost">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.58v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.1-.78.41-1.3.75-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.11-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z"/></svg>
+      GitHub
+    </a>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="sobre-grid">
+    <div class="sobre-avatar">
+      <div style="position:relative; display:inline-block;">
+        <div class="avatar-ring"></div>
+        <div style="width:220px;height:220px;border-radius:50%;overflow:hidden;border:3px solid #3B82F6;">
+          <img src="https://avatars.githubusercontent.com/u/255578509?v=4" alt="Pedro Henrique" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+      </div>
+    </div>
+    <div class="sobre-text">
+      <div class="section-label">// sobre mim</div>
+      <h2 class="section-title">Olá, sou <span style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Pedro</span> 👋</h2>
+      <p>Desenvolvedor de Software em formação, estudante de Análise e Desenvolvimento de Sistemas na <strong>Unicesumar</strong> e certificado pelo <strong>SENAI</strong> em Front-end, Back-end e Banco de Dados.</p>
+      <p>Apaixonado por código limpo, banco de dados e por construir soluções que resolvem problemas reais. Em constante evolução, sempre buscando o próximo nível.</p>
+      <ul class="sobre-list">
+        <li>🎓 ADS - Unicesumar</li>
+        <li>📚 Inglês - Fluency Academy</li>
+        <li>🌐 Criação de sites e landing pages com WordPress & Elementor</li>
+        <li>🎯 Objetivo: me tornar um desenvolvedor Full Stack</li>
+        <li>☕ Java · 🟨 JavaScript · 🛢️ MySQL (forte foco em banco)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TECH -->
+<section id="tech">
+  <div class="section-label">// tecnologias</div>
+  <h2 class="section-title">Stack & Ferramentas</h2>
+  <p class="section-sub">As tecnologias que uso no dia a dia e que estou aprofundando continuamente.</p>
+  <div class="tech-grid">
+    <div class="tech-card"><div class="tech-icon">☕</div><div class="tech-name">Java</div></div>
+    <div class="tech-card"><div class="tech-icon">🍃</div><div class="tech-name">Spring Boot</div></div>
+    <div class="tech-card"><div class="tech-icon">🟨</div><div class="tech-name">JavaScript</div></div>
+    <div class="tech-card"><div class="tech-icon">🐘</div><div class="tech-name">PHP</div></div>
+    <div class="tech-card"><div class="tech-icon">🛢️</div><div class="tech-name">MySQL</div></div>
+    <div class="tech-card"><div class="tech-icon">🧱</div><div class="tech-name">HTML5</div></div>
+    <div class="tech-card"><div class="tech-icon">🎨</div><div class="tech-name">CSS3</div></div>
+    <div class="tech-card"><div class="tech-icon">🅱️</div><div class="tech-name">Bootstrap</div></div>
+    <div class="tech-card"><div class="tech-icon">🌐</div><div class="tech-name">WordPress</div></div>
+    <div class="tech-card"><div class="tech-icon">⚙️</div><div class="tech-name">Git</div></div>
+    <div class="tech-card"><div class="tech-icon">💻</div><div class="tech-name">VS Code</div></div>
+    <div class="tech-card"><div class="tech-icon">🔌</div><div class="tech-name">REST API</div></div>
+  </div>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos">
+  <div class="section-label">// projetos</div>
+  <h2 class="section-title">O que eu construí</h2>
+  <p class="section-sub">Projetos práticos que desenvolvi para aprender e aplicar minhas habilidades.</p>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <span class="project-lang">Java · Spring Boot</span>
+      <h3 class="project-title">📚 Sistema de Biblioteca</h3>
+      <p class="project-desc">Aplicação desktop com API REST integrada. Gerenciamento completo de livros e empréstimos com interface gráfica e banco de dados.</p>
+      <div class="project-tags">
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">REST API</span>
+      </div>
+      <a href="https://github.com/dropeesz/biblioteca-api" target="_blank" class="project-link">Ver repositório →</a>
+    </div>
+
+    <div class="project-card">
+      <span class="project-lang">PHP · MySQL</span>
+      <h3 class="project-title">📝 Sistema de Cadastro</h3>
+      <p class="project-desc">Aplicação web com cadastro de usuários, exportação de dados, interface responsiva e integração com banco de dados MySQL.</p>
+      <div class="project-tags">
+        <span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">HTML/CSS</span>
+      </div>
+      <a href="https://github.com/dropeesz/PHP_project" target="_blank" class="project-link">Ver repositório →</a>
+    </div>
+
+    <div class="project-card">
+      <span class="project-lang">JavaScript</span>
+      <h3 class="project-title">📖 Biblioteca JS</h3>
+      <p class="project-desc">Projeto de biblioteca desenvolvido em JavaScript puro com foco em lógica de programação e manipulação de dados.</p>
+      <div class="project-tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
+      <a href="https://github.com/dropeesz/biblioteca-js-project" target="_blank" class="project-link">Ver repositório →</a>
+    </div>
+
+    <div class="project-card">
+      <span class="project-lang">WordPress · Elementor</span>
+      <h3 class="project-title">🌐 Coolmeia Website</h3>
+      <p class="project-desc">Um dos meus primeiros projetos profissionais. Site institucional moderno e responsivo com foco em usabilidade e presença digital.</p>
+      <div class="project-tags">
+        <span class="tag">WordPress</span>
+        <span class="tag">Elementor</span>
+        <span class="tag">UI/UX</span>
+      </div>
+      <a href="https://agenciacoolmeia.com" target="_blank" class="project-link">Ver ao vivo →</a>
+    </div>
+
+    <div class="project-card">
+      <span class="project-lang">HTML · CSS</span>
+      <h3 class="project-title">🎓 Trabalho Final SENAI</h3>
+      <p class="project-desc">Projeto final do curso de desenvolvimento Front-end no SENAI, aplicando as melhores práticas de HTML e CSS semântico.</p>
+      <div class="project-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Responsive</span>
+      </div>
+      <a href="https://github.com/dropeesz/trabalho-final" target="_blank" class="project-link">Ver repositório →</a>
+    </div>
+
+    <div class="project-card">
+      <span class="project-lang">SQL</span>
+      <h3 class="project-title">🛢️ SQL Project</h3>
+      <p class="project-desc">Projeto focado em banco de dados: modelagem, queries avançadas e otimização de consultas no MySQL.</p>
+      <div class="project-tags">
+        <span class="tag">MySQL</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Modelagem</span>
+      </div>
+      <a href="https://github.com/dropeesz/sql_project" target="_blank" class="project-link">Ver repositório →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTS -->
+<section id="certs">
+  <div class="section-label">// certificações</div>
+  <h2 class="section-title">Formação & Certificados</h2>
+  <p class="section-sub">Aprendizado contínuo é parte da minha rotina.</p>
+  <div class="certs-grid">
+    <div class="cert-card">
+      <div class="cert-icon">🎓</div>
+      <div class="cert-body">
+        <div class="cert-inst">Unicesumar</div>
+        <div class="cert-name">Cursando Análise e Desenvolvimento de Sistemas</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🏭</div>
+      <div class="cert-body">
+        <div class="cert-inst">SENAI</div>
+        <div class="cert-name">Desenvolvimento Front-end</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🏭</div>
+      <div class="cert-body">
+        <div class="cert-inst">SENAI</div>
+        <div class="cert-name">Desenvolvimento Back-end</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🏭</div>
+      <div class="cert-body">
+        <div class="cert-inst">SENAI</div>
+        <div class="cert-name">Banco de Dados</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">⚡</div>
+      <div class="cert-body">
+        <div class="cert-inst">DankiCode</div>
+        <div class="cert-name">Front-end 2.0</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🤖</div>
+      <div class="cert-body">
+        <div class="cert-inst">DankiCode</div>
+        <div class="cert-name">N8N – Introdução à Automação</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🌍</div>
+      <div class="cert-body">
+        <div class="cert-inst">Fluency Academy</div>
+        <div class="cert-name">Inglês</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">📚</div>
+      <div class="cert-body">
+        <div class="cert-inst">Diversas Instituições</div>
+        <div class="cert-name">Cursos complementares</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="section-label">// serviços</div>
+  <h2 class="section-title">O que eu posso fazer por você</h2>
+  <p class="section-sub">Além de código, ofereço soluções completas que vão do digital visual até sistemas que realmente funcionam.</p>
+
+  <!-- Pilares visuais -->
+  <div class="servicos-intro">
+    <div class="servicos-intro-text">
+      <p>Combinando <strong>desenvolvimento de software</strong> com <strong>presença digital estratégica</strong>, entrego projetos completos — do layout ao banco de dados, das redes sociais ao sistema rodando em produção.</p>
+      <p>Não é só entregar um site bonito. É construir algo que <strong>representa você ou seu negócio</strong> com identidade visual coerente, conteúdo planejado e tecnologia sólida por trás.</p>
+      <p>Ferramentas que uso: <strong>Canva</strong> para design e artes, <strong>CapCut</strong> para edição de vídeos e Reels, mais toda a stack de desenvolvimento citada acima.</p>
+    </div>
+    <div class="servicos-pillars">
+      <div class="pillar">
+        <div class="pillar-icon">🎨</div>
+        <div class="pillar-title">Design</div>
+        <div class="pillar-desc">Identidade visual, artes para redes sociais e branding consistente.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">📱</div>
+        <div class="pillar-title">Social Media</div>
+        <div class="pillar-desc">Gestão de feed, stories, Reels e planejamento de conteúdo.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🌐</div>
+        <div class="pillar-title">Sites & Landing Pages</div>
+        <div class="pillar-desc">Sites institucionais, portfólios e páginas de conversão.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">⚙️</div>
+        <div class="pillar-title">Sistemas Web</div>
+        <div class="pillar-desc">Aplicações customizadas com banco de dados, back-end e interface.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="servicos-divider">serviços detalhados</div>
+
+  <!-- Cards detalhados -->
+  <div class="servico-cards">
+
+    <div class="servico-card pink">
+      <div class="servico-header">
+        <div class="servico-emoji">🎨</div>
+        <div>
+          <div class="servico-cat">Design & Branding</div>
+          <div class="servico-title">Identidade Visual</div>
+        </div>
+      </div>
+      <p class="servico-desc">Criação de identidade visual completa para marcas, negócios e criadores de conteúdo — do logo às artes de redes sociais.</p>
+      <ul class="servico-list">
+        <li>Design de posts, stories e banners</li>
+        <li>Identidade visual e paleta de cores</li>
+        <li>Templates editáveis no Canva</li>
+        <li>Artes para anúncios e campanhas</li>
+      </ul>
+      <div class="servico-tools">
+        <span class="servico-tool pink">Canva</span>
+        <span class="servico-tool pink">Branding</span>
+      </div>
+    </div>
+
+    <div class="servico-card blue">
+      <div class="servico-header">
+        <div class="servico-emoji">📱</div>
+        <div>
+          <div class="servico-cat">Social Media</div>
+          <div class="servico-title">Gestão de Redes Sociais</div>
+        </div>
+      </div>
+      <p class="servico-desc">Gestão completa de perfis com planejamento de conteúdo, criação de artes e edição de vídeos para aumentar o engajamento.</p>
+      <ul class="servico-list">
+        <li>Planejamento de feed e calendário editorial</li>
+        <li>Criação de posts e stories</li>
+        <li>Edição de Reels e vídeos curtos</li>
+        <li>Copywriting para legendas</li>
+      </ul>
+      <div class="servico-tools">
+        <span class="servico-tool blue">Canva</span>
+        <span class="servico-tool blue">CapCut</span>
+        <span class="servico-tool blue">Instagram</span>
+      </div>
+    </div>
+
+    <div class="servico-card green">
+      <div class="servico-header">
+        <div class="servico-emoji">🌐</div>
+        <div>
+          <div class="servico-cat">Web Development</div>
+          <div class="servico-title">Sites & Landing Pages</div>
+        </div>
+      </div>
+      <p class="servico-desc">Criação de sites institucionais, portfólios e landing pages de alta conversão — com WordPress/Elementor ou código puro.</p>
+      <ul class="servico-list">
+        <li>Sites responsivos e modernos</li>
+        <li>Landing pages otimizadas</li>
+        <li>WordPress com Elementor</li>
+        <li>HTML, CSS e JavaScript</li>
+      </ul>
+      <div class="servico-tools">
+        <span class="servico-tool green">WordPress</span>
+        <span class="servico-tool green">HTML/CSS</span>
+        <span class="servico-tool green">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="servico-card blue">
+      <div class="servico-header">
+        <div class="servico-emoji">⚙️</div>
+        <div>
+          <div class="servico-cat">Sistemas Web</div>
+          <div class="servico-title">Criação de Sistemas</div>
+        </div>
+      </div>
+      <p class="servico-desc">Desenvolvimento de sistemas web completos com back-end robusto, banco de dados estruturado e interface intuitiva — do zero ao deploy.</p>
+      <ul class="servico-list">
+        <li>Sistemas de cadastro e gestão</li>
+        <li>APIs REST com Java/Spring Boot ou PHP</li>
+        <li>Banco de dados MySQL estruturado</li>
+        <li>Painéis administrativos</li>
+        <li>Integração entre front e back-end</li>
+      </ul>
+      <div class="servico-tools">
+        <span class="servico-tool blue">Java</span>
+        <span class="servico-tool blue">Spring Boot</span>
+        <span class="servico-tool blue">PHP</span>
+        <span class="servico-tool blue">MySQL</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="servicos-cta">
+    <h3>Tem um projeto em mente? 🚀</h3>
+    <p>Se você precisa de um sistema, site, presença digital ou tudo isso junto — vamos conversar sobre o que faz sentido para o seu negócio.</p>
+    <a href="https://api.whatsapp.com/send/?phone=5521979787229&text=Olá+Pedro,+vi+seu+portfólio+e+gostaria+de+conversar+sobre+um+projeto!" target="_blank" class="btn btn-primary">💬 Falar no WhatsApp</a>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="section-label">// contato</div>
+  <h2 class="section-title">Vamos conversar?</h2>
+  <p class="section-sub">Aberto a oportunidades, projetos freelance e colaborações. Escolha o canal que preferir!</p>
+  <div class="contact-links">
+    <a href="https://www.linkedin.com/in/pedro-henrique-2708a12b5/" target="_blank" class="contact-btn">
+      <span class="ci">💼</span> LinkedIn
+    </a>
+    <a href="https://api.whatsapp.com/send/?phone=5521979787229&text=Olá+Pedro!" target="_blank" class="contact-btn">
+      <span class="ci">💬</span> WhatsApp
+    </a>
+    <a href="mailto:dropee894@gmail.com" class="contact-btn">
+      <span class="ci">📧</span> E-mail
+    </a>
+    <a href="https://github.com/dropeesz" target="_blank" class="contact-btn">
+      <span class="ci">🐙</span> GitHub
+    </a>
+    <a href="https://www.instagram.com/pedrocodes_/" target="_blank" class="contact-btn">
+      <span class="ci">📸</span> Instagram
+    </a>
+    <a href="https://discord.com/users/1469019850386178202" target="_blank" class="contact-btn">
+      <span class="ci">🎮</span> Discord
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>Desenvolvido com 💙 por <a href="https://github.com/dropeesz">Pedro Henrique</a> &nbsp;·&nbsp; 2024</p>
+  <p style="margin-top:.4rem;font-style:italic;font-size:.75rem;">"A melhor forma de aprender programação é construindo projetos reais."</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
