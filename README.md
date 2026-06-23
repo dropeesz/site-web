@@ -69,7 +69,8 @@ O site conta com design moderno em tema escuro, terminal animado no hero, navbar
 ```text
 site-web/
 │
-├── index.html       # Arquivo principal (estrutura + estilos + scripts)
+├── index.html       # Arquivo principal (estrutura + scripts)
+├── style.css        # Arquivo de estlização (estilos)
 └── README.md        # Documentação do projeto
 ```
 
@@ -97,6 +98,12 @@ https://dropeesz.github.io/site-web/
 
 > Para ativar: **Settings → Pages → Source: main / (root) → Save**
 
+
+### Acessando pelo link
+
+```text
+https://pedrocodes.site.je/?i=1
+```
 ---
 
 ## 🧠 Conceitos Aplicados
@@ -127,3 +134,5 @@ https://dropeesz.github.io/site-web/
 GitHub: https://github.com/dropeesz
 
 LinkedIn: https://www.linkedin.com/in/pedro-henrique-2708a12b5/
+
+Intagram: https://www.instagram.com/pedrocodes_/
